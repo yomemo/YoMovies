@@ -50,6 +50,12 @@ dependencies {
     implementation('com.squareup.okhttp3:okhttp:5.0.0-alpha.3')
     // ---------------------- Image Loading ----------------------
     implementation("io.coil-kt:coil:1.4.0")
+    // ---------------------- Circle ImageView ----------------------
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // ---------------------- Picasso Image Loader ----------------------
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // ---------------------- GravitySnapHelper ----------------------
+    implementation 'com.github.rubensousa:gravitysnaphelper:2.2.2'
     // ---------------------- Curved Bottom Navigation ----------------------
     implementation 'np.com.susanthapa:curved_bottom_navigation:0.6.5'
 

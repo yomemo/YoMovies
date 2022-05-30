@@ -17,16 +17,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.TransitionInflater
 import coil.load
 import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
-import com.google.firebase.auth.FirebaseAuth
-import com.yomemo.yomovies.R
-import com.yomemo.yomovies.api.ApiService
-import com.yomemo.yomovies.databinding.FragmentHomeBinding
-import com.yomemo.yomovies.models.Movie
-import com.yomemo.yomovies.models.Movies
-import com.yomemo.yomovies.ui.MainActivity
-import com.yomemo.yomovies.ui.adapters.MoviesAdapter
-import com.yomemo.yomovies.ui.adapters.NowPlayingAdapter
-import com.yomemo.yomovies.view_models.MoviesViewModel
+import com.yomemo.app.yomovies.R
+import com.yomemo.app.yomovies.databinding.FragmentHomeBinding
+import com.yomemo.app.yomovies.ui.MainActivity
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -75,12 +69,12 @@ class HomeFragment : Fragment() {
         loadData()
     }
 
-    private fun loadProfile() {
-        val user = FirebaseAuth.getInstance().currentUser
-        val stringName = "${user?.displayName} 👋"
-        binding.textName.text = stringName
-        binding.profileImage.load(user?.photoUrl)
-    }
+//    private fun loadProfile() {
+//        val user = FirebaseAuth.getInstance().currentUser
+//        val stringName = "${user?.displayName} 👋"
+//        binding.textName.text = stringName
+//        binding.profileImage.load(user?.photoUrl)
+//    }
 
 
     private fun setupButtonClicks() {
