@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="@string/menu_favorite" />
+
+    <item
+        android:id="@+id/nav_movie_theaters"
+        android:icon="@drawable/avd_dashboard"
+        android:title="@string/menu_explore" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_outline"
+        android:title="@string/menu_profile" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_rocket_launch"
+        android:title="@string/menu_about" />
+</menu>
