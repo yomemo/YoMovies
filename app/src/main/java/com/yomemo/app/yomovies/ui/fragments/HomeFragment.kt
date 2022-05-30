@@ -20,6 +20,9 @@ import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
 import com.yomemo.app.yomovies.R
 import com.yomemo.app.yomovies.databinding.FragmentHomeBinding
 import com.yomemo.app.yomovies.ui.MainActivity
+import com.yomemo.yomovies.api.ApiService
+import com.yomemo.yomovies.models.Movie
+import com.yomemo.yomovies.models.Movies
 
 import retrofit2.Call
 import retrofit2.Callback
@@ -63,7 +66,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("Home", "onViewCreated")
-        loadProfile()
+//        loadProfile()
         setupButtonClicks()
         setupRecyclerViews()
         loadData()
